@@ -60,7 +60,7 @@ export const forgotpassword = async (req, res) => {
     from: "vatsan.designs@gmail.com",
     to: email,
     subject: "Hello testing",
-    html: `<a href="http://localhost:5173/reset_password/${randomID}/${email}">Change Password</a>`,
+    html: `<a href="https://login-authentication-front-end.vercel.app/reset_password/${randomID}/${email}">Change Password</a>`,
   };
   transporter.sendMail(mailOptions);
   res.status(200).send("Mail sent");
