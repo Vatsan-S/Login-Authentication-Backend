@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import dotenv from 'dotenv';
+import express from "express";
 
 dotenv.config()
 const mongodb_url = process.env.MONGODB_URL
